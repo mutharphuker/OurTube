@@ -2,4 +2,4 @@
 
 OurTube is the simplest and very fast Telegram bot to download videos from YouTube. All you have to do is send a link.
 
-t.me/theourtubebot
+https://t.me/theourtubebot
