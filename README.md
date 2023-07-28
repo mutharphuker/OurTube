@@ -1,1 +1,1 @@
-![logo2](https://github.com/lesterleexxx/ourtube/assets/70449559/44a70d97-aacb-4fe4-a565-1db9f6aa3df7)
+![Untitled-1](https://github.com/lesterleexxx/ourtube/assets/70449559/f3507635-7e9d-47d3-a3aa-d1b31c353a3c)
