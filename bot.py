@@ -35,7 +35,8 @@ def send_message(message):
 			bot.send_message(message.chat.id, lng[f'{message.from_user.language_code}'][2])
 			path = ys.download('videos/')
 			bot.send_message(message.chat.id, lng[f'{message.from_user.language_code}'][3])
-			bot.send_video(message.chat.id, video=open(path, "rb"), supports_streaming=True)			
+			bot.send_video(message.chat.id, video=open(path, "rb"), supports_streaming=True)
+			os.remove(path)
 	except exceptions.AgeRestrictedError:
 		bot.send_message(message.chat.id, lng[f'{message.from_user.language_code}'][4])
 	except exceptions.RegexMatchError:
