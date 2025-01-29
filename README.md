@@ -3,4 +3,4 @@
 <a href="https://t.me/theourtubebot">OurTube</a> is a simple and fast way to download videos from YouTube.<br/>
 You just have to send the link! ❤🛠
 
-© Lester Davletbaev
+© Dior Davletbaev
