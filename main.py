@@ -38,19 +38,14 @@ def send_message(message):
 			file_path = f"{video_title}.mp4"
 			
 		bot.edit_message_text(lng[f'{message.from_user.language_code}'][3], chat_id=message.chat.id, message_id=statuss.message_id)
-		# Send the video file to the user
 		with open(file_path, 'rb') as video:
 			bot.send_video(message.chat.id, video, caption=lng[f'{message.from_user.language_code}'][8], parse_mode='html')
+
 		os.remove(file_path)
 		bot.delete_message(message.chat.id, statuss.message_id)
-	except exceptions.AgeRestrictedError: # type: ignore
-		bot.send_message(message.chat.id, lng[f'{message.from_user.language_code}'][4])
-	except exceptions.RegexMatchError: # type: ignore
-		bot.send_message(message.chat.id, lng[f'{message.from_user.language_code}'][6])
 	except Exception as e:
 		bot.send_message(message.chat.id, lng[f'{message.from_user.language_code}'][5])
-		print("ERROR should be below:")
-		print(repr(e))
+		print("ERROR: " + repr(str(e)))
 		
 print("Bot is running...")
 bot.polling(none_stop=True)
