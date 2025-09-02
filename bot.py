@@ -8,11 +8,9 @@ from aiogram.filters import CommandStart
 from aiogram.types import Message
 from aiogram.exceptions import TelegramBadRequest
 from yt_dlp import YoutubeDL
-from dotenv import load_dotenv
 
-# Load environment variables
-load_dotenv()
-BOT_TOKEN = os.getenv("6203380442:AAHMZtZFsSlomzxhLQ0E3DTaMQ1KDDhy0")
+# Put your bot token directly here
+BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"
 
 # Initialize bot
 bot = Bot(token=BOT_TOKEN)
