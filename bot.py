@@ -10,7 +10,7 @@ from aiogram.exceptions import TelegramBadRequest
 from yt_dlp import YoutubeDL
 
 # Put your bot token directly here
-BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"
+BOT_TOKEN = "6203380442:AAHMZtZFsSlomzxhLQ0E3DTaMQ1KDDhy0"
 
 # Initialize bot
 bot = Bot(token=BOT_TOKEN)
